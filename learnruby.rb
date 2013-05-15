@@ -43,15 +43,31 @@ puts whale.legs
 
 
 
-class Reptile < Animal
-	def initialize(reptile_name, reptile_age)
-		super(reptile_name, reptile_age)
+class Bird < Animal
+	def initialize(bird_name, bird_age, flight_enabled)
+		super(bird_name, bird_age)
+		@flight = flight_enabled
 	end
 	
+	attr_reader  :flight
+	
 end
-lizard = Reptile.new('Jingjok', 3)
-puts lizard.name
-puts lizard.age
+
+eagle = Bird.new('Baldy', 12, 'yes')
+puts eagle.name
+puts eagle.age
+puts eagle.flight
+
+ostrich = Bird.new('Necky', 6, 'no')
+puts ostrich.name
+puts ostrich.age
+puts ostrich.flight
+
+hummingbird = Bird.new('Hummy', 2, 'like a helicopter')
+puts hummingbird.name
+puts hummingbird.age
+puts hummingbird.flight
+
 
 
 
