@@ -69,14 +69,19 @@ puts hummingbird.name
 puts hummingbird.age
 puts hummingbird.flight
 
+class Zoo
+	 #zoo class should take an array as an argument
+end
+
 @zoo = [dog, gorilla, whale, eagle, ostrich, hummingbird]
 
 for a in @zoo
-	puts a.legs
+	puts a.name
 end
 
 @zoo.each do |a|
-	puts legs
+	puts a.name
 end
 
-zoo.search(kind: 'Mammal', legs: 4)
+zoo.search(kind: 'Bird', name: 'Hummy')
+
