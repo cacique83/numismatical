@@ -53,6 +53,7 @@ class Bird < Animal
 	
 end
 
+
 eagle = Bird.new('Baldy', 12, 'yes')
 puts eagle.name
 puts eagle.age
@@ -68,6 +69,14 @@ puts hummingbird.name
 puts hummingbird.age
 puts hummingbird.flight
 
+@zoo = [dog, gorilla, whale, eagle, ostrich, hummingbird]
 
+for a in @zoo
+	puts a.legs
+end
 
+@zoo.each do |a|
+	puts legs
+end
 
+zoo.search(kind: 'Mammal', legs: 4)
