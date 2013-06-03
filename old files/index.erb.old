@@ -1,0 +1,83 @@
+<html>
+	<head>
+
+	</head>
+
+	<body>
+		<div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Hello, Coin Collectors!</h1>
+        <p>This is a site that will allow you to catalogue your coin collection and upload the content to social media, like Facebook, and other sites.</p>
+      
+
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          Find Out More
+          <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+          We will offer database to Social Media capabilities.
+          </ul>
+        </div>
+      </div>
+
+        
+
+      <!-- Example row of columns -->
+      <div class="active">
+      <div class="row">
+        <div class="span3">
+          <h2>Coins</h2>
+          <p>Build your coind database here. </p>
+
+          <li class="active"><a href="#"></a></li>
+
+          <p><a class="btn" href="coins.html">View details »</a></p>
+        </div>
+
+        <div class="span3">
+          <h2>Database</h2>
+          <p>Edit and control your database here. </p>
+          <p><a class="btn" href="#">View details »</a></p>
+       </div>
+        <div class="span3">
+          <h2>Social Media</h2>
+          <p>Connect to Social Media Sites</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div>
+        <div class="span3">
+          <h2>Share and Trade</h2>
+          <p>Share your coins with other collectors, and trade with them.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© This page broght to you by Super Smarmy Company 2013</p>
+      </footer>
+
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ...
+</html>
+	
