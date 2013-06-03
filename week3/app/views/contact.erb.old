@@ -1,0 +1,14 @@
+<h1>Contact</h1>
+
+<form action='/messages' method='post'>
+	<label for='email'>Email</label>
+		<input type='text' name='email' />
+
+	<label for='subject'>Subject</label>
+	<input type='text' name='subject' />
+
+	<label for='message'>Message</label>
+	<textarea name='message'></textarea>
+
+	<input type='submit' value="Send!"/>
+</form>
