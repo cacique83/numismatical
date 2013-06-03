@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+  <meta charset="utf-8">
+  <title>Basic HTML 5 Template</title>
+  <meta name="description" content="html 5 basic template">
+  <meta name="author" content="Zack Siri">
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap-responsive.css">  
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/bootstrap.js"></script>
+
+  <script src="javascripts/application.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Numismatical</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index2.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li class="active"><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Coins</a></li>
+                  <li><a href="#">Database</a></li>
+                  <li><a href="#">Social Media</a></li>
+                  <li><a href="#">Share and Trade</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">SIGNUP NOW</li>
+                  <li><a href="#">Register</a></li>
+                  <li><a href="#">Sign-In</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    
+    <div class='container'>
+      <div>
+        Content
+      </div>
+
+
+
+    <div class="row-fluid">
+      <div class="span4">
+        <form id='contact-form'>
+          <fieldset>
+            <legend>Numismatic.net</legend>
+            <h1>Contact Us</h1>
+      
+            <input type="text" placeholder="Your Name">
+            <span class="help-block">Please enter your name here</span>
+
+            <input type="text" placeholder="Your Email">
+            <span class="help-block">Please enter your email address here</span>
+
+            <input type="text" placeholder="Your Message">
+            <span class="help-block">Please enter your message here</span>
+
+
+
+          <label class="checkbox">
+           <input type="checkbox"> Remember me?
+          </label>
+          <button type="submit" class="btn">Submit</button>
+        </fieldset>
+      </form>
+        
+   </div>
+        
+
+
+      <!--showing tabs-->
+    <div class="span8">
+          <ul class="nav nav-tabs" id="myTab">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#settings">Settings</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">...</div>
+            <div class="tab-pane" id="profile">...</div>
+            <div class="tab-pane" id="messages">...</div>
+            <div class="tab-pane" id="settings">...</div>
+          </div>
+    </div>
+
+    <ul class="breadcrumb">
+        <li><a href="#">Numismatic.net</a> <span class="divider">/</span></li>
+        <li><a href="#">Contact Us</a> <span class="divider">/</span></li>
+        <li class="active">Don't be Shy</li>
+    </ul>
+     
+
+  </div>
