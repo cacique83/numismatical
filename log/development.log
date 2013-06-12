@@ -1,0 +1,89 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (259.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (137.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCoins (20130605115601)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (194.8ms)[0m  [1mCREATE TABLE "coins" ("id" serial primary key, "name" character varying(255), "condition" integer, "market_value" integer, "origin" character varying(255), "user_id" integer, "for_sale" boolean, "for_trade" boolean, "image" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (41.7ms)[0m  CREATE INDEX "index_coins_on_user_id" ON "coins" ("user_id")
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130605115601')[0m
+  [1m[35m (14.8ms)[0m  COMMIT
+Migrating to CreateUsers (20130605120650)
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (122.6ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130605120650')[0m
+  [1m[35m (25.8ms)[0m  COMMIT
+Migrating to CreateAlbums (20130605120855)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (78.9ms)[0m  CREATE TABLE "albums" ("id" serial primary key, "name" character varying(255), "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (63.2ms)[0m  [1mCREATE INDEX "index_albums_on_user_id" ON "albums" ("user_id")[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130605120855')
+  [1m[36m (14.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAlbumsCoins (20130605121235)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "albums_coins" ("album_id" integer NOT NULL, "coin_id" integer NOT NULL) [0m
+  [1m[35m (63.2ms)[0m  CREATE UNIQUE INDEX "index_albums_coins_on_album_id_and_coin_id" ON "albums_coins" ("album_id", "coin_id")
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130605121235')[0m
+  [1m[35m (23.2ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCoins (20130605115601)
+Migrating to CreateUsers (20130605120650)
+Migrating to CreateAlbums (20130605120855)
+Migrating to CreateAlbumsCoins (20130605121235)
+Migrating to CreateAlbumsUsers (20130605122204)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130605122204')[0m
+  [1m[35m (41.6ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCoins (20130605115601)
+Migrating to CreateUsers (20130605120650)
+Migrating to CreateAlbums (20130605120855)
+Migrating to CreateAlbumsCoins (20130605121235)
+Migrating to CreateAlbumsUsers (20130605122520)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCoins (20130605115601)
+Migrating to CreateUsers (20130605120650)
+Migrating to CreateAlbums (20130605120855)
+Migrating to CreateAlbumsCoins (20130605121235)
+Migrating to CreateAlbumsUsers (20130605122520)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "albums_users" ("album_id" integer NOT NULL, "user_id" integer NOT NULL) [0m
+  [1m[35m (76.0ms)[0m  CREATE UNIQUE INDEX "index_albums_users_on_album_id_and_user_id" ON "albums_users" ("album_id", "user_id")
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130605122520')[0m
+  [1m[35m (19.8ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCoins (20130605115601)
+Migrating to CreateUsers (20130605120650)
+Migrating to CreateAlbums (20130605120855)
+Migrating to CreateAlbumsCoins (20130605121235)
+Migrating to CreateAlbumsUsers (20130605122520)
+Migrating to CreateOffers (20130605123253)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (91.5ms)[0m  [1mCREATE TABLE "offers" ("id" serial primary key, "coin_id" integer, "offer_price" integer, "trader_id" integer, "trader_coin_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (61.6ms)[0m  CREATE INDEX "index_offers_on_coin_id" ON "offers" ("coin_id")
+  [1m[36m (52.2ms)[0m  [1mCREATE INDEX "index_offers_on_trader_id" ON "offers" ("trader_id")[0m
+  [1m[35m (60.7ms)[0m  CREATE INDEX "index_offers_on_trader_coin_id" ON "offers" ("trader_coin_id")
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130605123253')[0m
+  [1m[35m (16.3ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

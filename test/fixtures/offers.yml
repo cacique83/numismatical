@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  coin_id: 
+  offer_price: 1
+  trader: 
+  trader_coin_id: 
+
+two:
+  coin_id: 
+  offer_price: 1
+  trader: 
+  trader_coin_id: 
