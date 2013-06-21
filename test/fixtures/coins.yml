@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  condition: 
+  market_value: 
+  origin: MyString
+  user_id: 
+  for_sale: 
+  for_trade: 
+  image: MyString
+
+two:
+  name: MyString
+  condition: 
+  market_value: 
+  origin: MyString
+  user_id: 
+  for_sale: 
+  for_trade: 
+  image: MyString
