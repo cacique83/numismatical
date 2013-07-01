@@ -1,0 +1,12 @@
+<li class='thumbnail'>
+		<h2><%= link_to coin.name, coin_path(coin) %></h2>
+	<p><%= coin.description %></p>
+	<p><%= coin.market_value %></p>
+	<p><%= image_tag coin.image.thumb %></p>
+	
+
+
+<%= link_to "Edit", edit_coin_path(coin), class: 'btn' %>
+	<%= link_to "Delete", coin_path(coin), class: 'btn', method: :delete, confirm: "Are you sure?" %>
+
+</li>

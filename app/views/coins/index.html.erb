@@ -1,0 +1,8 @@
+<h1>Coins</h1>
+<%= link_to "new Coin", new_coin_path %>
+<ul class='thumbnails'>
+
+<% @coins.each do |coin| %>
+	<%= render coin %>
+	<% end%>
+</ul>
